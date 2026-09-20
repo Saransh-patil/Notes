@@ -1,0 +1,35 @@
+---------------Decimal to binary --------------------
+
+n=13
+while n>0:
+    x=n%2
+    x=str(x)
+    s+=x
+    n=n//2
+print(s[::-1])
+
+or
+print(bin(13)[2:])
+
+---------------------------------------------------------
+---------print(user details from list)------------------
+s=[]
+class Student:
+    def __init__(self):
+        self.name=input("Enter name ")
+        self.age=int(input("Enter age "))
+        s.append(self)
+obj=Student()
+for i in s:
+    print(i.name, i.age)
+print(obj.name)
+print(obj.age)
+-------------------------------------------------------       
+-----------isinstance-----------------------------------
+name = "Alice"
+age = 30
+
+print(isinstance(name,str)) #output:True
+print(isinstance(1, int))  # Output: True
+print(isinstance(age, str))   # Output: False
+-----------------------------------------------------------
